@@ -1,0 +1,40 @@
+.sign-up-bg, .log-in-bg{
+    background-image: url("../../images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+}
+.width{
+width: 30%;
+}
+.form-input{
+    width: 100%;
+    padding: 10px ;
+    outline: none;
+    border: none;
+    background-color: #F5F5F5;
+}
+.sign-btn{
+    background-color: #F91944;
+    border: 1px solid #F91944;
+    color: white;
+    transition: all 0.5s;
+}
+.sign-btn:hover{
+    background-color: #f30031;
+    border: 1px solid #F91944;
+    color: white;
+}
+@media (max-width:576px){
+.width{
+width: 90%;
+}
+}
+@media (max-width:992px){
+.width{
+width: 60%;
+}
+}

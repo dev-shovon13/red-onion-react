@@ -1,24 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import AuthProvider from './context/AuthProvider';
+// import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Header from './Pages/Header/Header';
+import Home from './Pages/Home/Home';
+import NotFound from './Pages/NotFound/NotFound'
+import Footer from './Pages/Footer/Footer';
+import LogIn from './Pages/LogIn/LogIn';
+import SignUp from './Pages/SignUp/SignUp';
+import WhyUs from './Pages/WhyUs/WhyUs';
+import Food from './Pages/Food/Food';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Header />
+            <Home />
+            <Footer />
+          </Route>
+          <Route exact path="/home">
+            <Header />
+            <Home />
+            <Footer />
+          </Route>
+          <Route path="/login">
+            <LogIn />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+          <Route path="/about">
+            <Header />
+            <WhyUs />
+            <Footer />
+          </Route>
+          <Route path="/food">
+            <Header />
+            <Food />
+            <Footer />
+          </Route>
+
+          {/* <PrivateRoute exact path="/review">
+          </PrivateRoute> */}
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </Router>
+    </AuthProvider>
   );
 }
 

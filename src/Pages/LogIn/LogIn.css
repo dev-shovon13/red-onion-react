@@ -1,0 +1,20 @@
+.fs-icon{
+    font-size: 45px;
+    transition: all .5s;
+}
+.fs-icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.icon-twitter{
+    color: #009DED;
+}
+.icon-facebook{
+    color: #046FE5;
+}
+/* using some media query  */
+@media (max-width:992px) { 
+.log-in-bg, .sign-up-bg{
+    height: 100%;
+}
+}

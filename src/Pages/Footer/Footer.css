@@ -1,0 +1,35 @@
+.footer{
+    background-color: #191919;
+}
+.text{
+    color: lightgray;
+}
+.bg-gradiant{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.f-body:hover .f-icon{
+    color: rgb(6, 133, 38);
+}
+.f-body:hover .f-text{
+    color: rgb(0, 0, 0) !important;
+    cursor: pointer;
+}
+.icon-1:hover,.top-icon-1{
+color: #009DED;
+}
+.icon-2:hover,.top-icon-2{
+color: #1773EA;
+}
+.icon-3:hover,.top-icon-3{
+color: #F14D49;
+}
+.icon-4:hover,.top-icon-4{
+color: #0270AD;
+}
+.icon-5:hover{
+color: #F70000;
+}
+.link:hover{
+    color: white !important;
+}

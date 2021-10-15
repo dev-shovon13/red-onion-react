@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.font{
+    font-family: 'Abel', sans-serif;
+}
+.f-color{
+    color: #474747;
+}
+.banner{
+    background-image: url("../../images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    height: 500px;
+}
+.banner-input{
+    width: 500px;
+    border-radius: 20px;
+    margin: auto;
+    padding-right: 103px;
+}
+.banner-search{
+    margin-left: -98px;
+    margin-bottom: 2px;
+}
+.banner-btn{
+    background-color: #F91944;
+    border-radius: 20px;
+    border: 1px solid #F91944;
+    color: white;
+    transition: all 0.5s;
+}
+.banner-btn:hover{
+    background-color: #f30031;
+    border: 1px solid #F91944;
+    color: white;
+}
+@media (max-width:576px){
+.banner-input{
+    width: 300px;
+}
+.banner-txt{
+    font-size: 28px;
+}
+}
