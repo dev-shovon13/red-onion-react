@@ -25,7 +25,7 @@ a:hover{
 }
 
 .item{
-    transition: all 0.6s ease-out;
+    transition: all 0.6s ease-in-out;
     width: 90%;
     margin: auto
 }
@@ -37,6 +37,6 @@ a:hover{
 
 @media (max-width:576px){
 .item{
-    width: 70%;
+    width: 75%;
 }
 }

@@ -15,7 +15,7 @@ const Food = () => {
                         <a className="font fw-bold menu menu-active py-2 px-3 active text-decoration-none" id="breakfast-tab" data-bs-toggle="pill" data-bs-target="#breakfast" type="button" role="tab" aria-controls="breakfast" aria-selected="true">BREAKFAST</a>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <a className="font fw-bold mx-5 menu py-2 px-3 text-decoration-none" id="lunch-tab" data-bs-toggle="pill" data-bs-target="#lunch" type="button" role="tab" aria-controls="lunch" aria-selected="false">LUNCH</a>
+                        <a className="font fw-bold mx-md-5 menu py-2 px-3 text-decoration-none" id="lunch-tab" data-bs-toggle="pill" data-bs-target="#lunch" type="button" role="tab" aria-controls="lunch" aria-selected="false">LUNCH</a>
                     </li>
                     <li className="nav-item" role="presentation">
                         <a className="font fw-bold menu py-2 px-3 text-decoration-none" id="dinner-tab" data-bs-toggle="pill" data-bs-target="#dinner" type="button" role="tab" aria-controls="dinner" aria-selected="false">DINNER</a>

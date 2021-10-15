@@ -34,12 +34,12 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={NavLink} activeStyle={{ color: "#F91944", fontWeight: "bold" }} to="/home">Home</Nav.Link>
-                            <Nav.Link as={NavLink} activeStyle={{ color: "#F91944", fontWeight: "bold" }} to="/about">About</Nav.Link>
-                            <Nav.Link as={NavLink} activeStyle={{ color: "#F91944", fontWeight: "bold" }} to="/food">Food</Nav.Link>
+                            <Nav.Link as={NavLink} activeStyle={{ color: "#F91944", fontWeight: "bold" }} to="/home" className="width-control">Home</Nav.Link>
+                            <Nav.Link as={NavLink} activeStyle={{ color: "#F91944", fontWeight: "bold" }} to="/about" className="width-control">About</Nav.Link>
+                            <Nav.Link as={NavLink} activeStyle={{ color: "#F91944", fontWeight: "bold" }} to="/food" className="width-control">Food</Nav.Link>
                         </Nav>
                         <Nav>
-                            <button className="btn login-btn me-lg-3 mb-2 mb-lg-0 px-4 py-2 color">
+                            <button className="btn login-btn me-lg-3 mb-2 mb-lg-0 px-4 py-2 color my-3 my-md-0">
                                 <FontAwesomeIcon icon={faShoppingCart} className="color me-1" />
                                 <p className="color fw-bold d-inline">0</p>
                             </button>
@@ -56,7 +56,7 @@ const Header = () => {
                                     :
                                     <div className="d-flex justify-content-center">
                                         <NavLink to="/login">
-                                            <button className="btn login-btn me-lg-3 mb-2 mb-lg-0 px-4 py-2">Login</button>
+                                            <button className="btn login-btn me-3 mb-2 mb-lg-0 px-4 py-2">Login</button>
                                         </NavLink>
                                         <NavLink to="/signup">
                                             <button className="btn signup-btn px-4 py-2">Sign up</button>

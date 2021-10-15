@@ -7,6 +7,7 @@
 .border-remove{
     border-bottom: none !important;
 }
+
 /* buttons */
 
 .login-btn{
@@ -32,4 +33,10 @@
     background-color: transparent;
     border: 1px solid #F91944;
     color: #F91944;
+}
+
+@media (max-width: 576px) {
+.width-control{
+    width: 50px;
+}  
 }
