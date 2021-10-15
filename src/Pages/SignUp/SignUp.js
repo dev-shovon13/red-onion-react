@@ -1,5 +1,4 @@
 import { faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faFingerprint } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { NavLink, useLocation, useHistory, Link } from 'react-router-dom';

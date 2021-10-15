@@ -15,6 +15,7 @@ import LogIn from './Pages/LogIn/LogIn';
 import SignUp from './Pages/SignUp/SignUp';
 import WhyUs from './Pages/WhyUs/WhyUs';
 import Food from './Pages/Food/Food';
+import FoodInfo from './Pages/Food/FoodInfo/FoodInfo';
 
 function App() {
   return (
@@ -45,6 +46,11 @@ function App() {
           <Route path="/food">
             <Header />
             <Food />
+            <Footer />
+          </Route>
+          <Route path="/:id/:slug">
+            <Header />
+            <FoodInfo />
             <Footer />
           </Route>
 

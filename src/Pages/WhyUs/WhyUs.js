@@ -56,8 +56,8 @@ const WhyUs = () => {
                                 <h4> <span className="font-top"><FontAwesomeIcon icon={item.icon} className=" text-white" /></span> <span className="font f-color fw-bold">{item.title}</span></h4>
                                 <div className="text-secondary">
                                     <div>{item.shortText} </div>
-                                    <div class="collapse" id={item.collapse}>{item.fullText}</div>
-                                    <a class="text-decoration-none color" data-bs-toggle="collapse" href={item.collapseHref} role="button" aria-expanded="false" aria-controls={item.collapse}> <span className="me-1">See More</span>
+                                    <div className="collapse" id={item.collapse}>{item.fullText}</div>
+                                    <a className="text-decoration-none color" data-bs-toggle="collapse" href={item.collapseHref} role="button" aria-expanded="false" aria-controls={item.collapse}> <span className="me-1">See More</span>
                                         <span className="font-bottom"><FontAwesomeIcon icon={faArrowRight} className="text-white " /></span>
                                     </a>
                                 </div></Col>
