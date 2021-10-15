@@ -4,7 +4,9 @@
 .color:hover{
     color: #F91944;
 }
-
+.border-remove{
+    border-bottom: none !important;
+}
 /* buttons */
 
 .login-btn{

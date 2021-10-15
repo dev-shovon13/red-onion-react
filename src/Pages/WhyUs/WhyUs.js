@@ -52,7 +52,7 @@ const WhyUs = () => {
                     {
                         data.map(item => {
                             return <Col sm={12} md={4} key={item.id} className="px-5 px-md-2 px-lg-3 my-3">
-                                <img src={item.img} alt="" className="img-fluid mb-4 why-img" />
+                                <img src={item.img} alt="" className="img-fluid mb-4 why-img animate__animated animate__pulse animate__slower	3s animate__infinite	infinite" />
                                 <h4> <span className="font-top"><FontAwesomeIcon icon={item.icon} className=" text-white" /></span> <span className="font f-color fw-bold">{item.title}</span></h4>
                                 <div className="text-secondary">
                                     <div>{item.shortText} </div>

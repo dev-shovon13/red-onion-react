@@ -1,0 +1,42 @@
+.menu{
+    color: rgb(24, 24, 24);
+    outline: none;
+}
+.menu:focus{
+    outline: none !important;
+}
+.active{
+    color: #F30031;
+    border-bottom: 2px solid #F30031;
+    border-radius: 0;
+}
+.active:hover, a:hover{
+    color: #F30031;
+}
+a:hover{
+    color: rgb(24, 24, 24);
+}
+.details-active{
+    border-bottom:none !important;
+    color: rgb(24, 24, 24)
+}
+.details-active:hover{
+    color: rgb(24, 24, 24)
+}
+
+.item{
+    transition: all 0.6s ease-out;
+    width: 90%;
+    margin: auto
+}
+.item:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px -1px rgb(121, 121, 121);
+    cursor: pointer;
+}
+
+@media (max-width:576px){
+.item{
+    width: 70%;
+}
+}

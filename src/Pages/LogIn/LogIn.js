@@ -83,7 +83,7 @@ const LogIn = () => {
                             <input type="password" className="form-input" placeholder="Password" onBlur={handlePassword} />
                         </div>
                         <div className="mb-3 text-start">
-                            <NavLink to="/login" className="text-decoration-none text-info">Forgot Password ?</NavLink>
+                            <NavLink to="/login" className="text-decoration-none text-info border-remove">Forgot Password ?</NavLink>
                         </div>
                         <button onClick={handleSignIn} className="btn sign-btn w-100"><FontAwesomeIcon icon={faSignInAlt} className="me-2" />Log In</button>
                         <div className="text-danger fw-bold fs-6">{error}</div>

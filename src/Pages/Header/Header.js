@@ -18,12 +18,15 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" className="border-bottom shadow-sm">
                 <Container>
                     <Navbar.Brand>
-                        <NavLink to="/home">
+                        <NavLink
+                            to="/home"
+                            className="border-remove"
+                        >
                             <img
                                 src={logo}
                                 width="150"
                                 height="40"
-                                className="d-inline-block align-top"
+                                className="d-inline-block align-top border-none"
                                 alt="logo"
                             />
                         </NavLink>
