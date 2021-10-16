@@ -15,28 +15,26 @@ const FoodInfo = () => {
     const quantityDecrease = () => {
         count > 1 && setCount(count - 1)
     }
-
     const { id, slug } = useParams()
     const foods = data.find(item => item.slug === slug)
     const { img, name, price, info } = foods.items[id]
-    let images = foods.items.map(a => a.img);
-    console.log(images);
+    let images = foods.items.map(obj => obj.img);
     return (
         <div className="container py-5">
             <div className="row row-cols-1 row-cols-md-2 ms-auto">
                 <div className="col">
                     <h1 className="w-75 item-info-title">{name}</h1>
                     <p className="w-75 item-info-p text-secondary fs-5 fw-light">{info}</p>
-                    <div className="d-flex align-items-center">
-                        <h2 className="f-price d-inline mb-0 me-5">
+                    <div className="row row-cols-3 align-items-center">
+                        <h2 className="col f-price d-inline mb-0">
                             <FontAwesomeIcon icon={faDollarSign} className=" text-warning me-1" />
-                            {parseFloat(price).toFixed(2)}
+                            {(price * count).toFixed(2)}
                         </h2>
-                        <div className="btn-group border px-2" role="group" aria-label="Basic example">
+                        <div className="col btn-group border px-2" role="group" aria-label="Basic example">
                             <span onClick={quantityDecrease} type="button" className="btn">
                                 <FontAwesomeIcon icon={faMinus} className="minus-icon me-1" />
                             </span>
-                            <input onChange={e => setCount(e.target.value)} type="number" name="" id="" className="form-control fs-5 food-quantity text-center" value={count} />
+                            <span className="fs-5 food-quantity text-center" > {count} </span>
                             <span onClick={quantityIncrease} type="button" className="btn">
                                 <FontAwesomeIcon icon={faPlus} className="plus-icon text-success ms-1" />
                             </span>
