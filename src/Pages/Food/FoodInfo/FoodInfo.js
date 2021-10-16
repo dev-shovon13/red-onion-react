@@ -13,7 +13,7 @@ const FoodInfo = () => {
         setCount(count + 1)
     }
     const quantityDecrease = () => {
-        count > 1 && setCount(count - 1)
+        (count > 1) && setCount(count - 1)
     }
     const { id, slug } = useParams()
     const foods = data.find(item => item.slug === slug)
@@ -23,7 +23,7 @@ const FoodInfo = () => {
         <div className="container py-5">
             <div className="row row-cols-1 row-cols-md-2 ms-auto">
                 <div className="col">
-                    <h1 className="w-75 item-info-title">{name}</h1>
+                    <h1 className="w-75 item-info-title text-capitalize">{name}</h1>
                     <p className="w-75 item-info-p text-secondary fs-5 fw-light">{info}</p>
                     <div className="row row-cols-3 align-items-center">
                         <h2 className="col f-price d-inline mb-0">
@@ -44,7 +44,7 @@ const FoodInfo = () => {
                     <Carousel variant="dark">
                         {
                             images.map(image => {
-                                return <Carousel.Item className="border-remove carousel">
+                                return <Carousel.Item key={image} className="border-remove carousel">
                                     <img
                                         className="d-block mx-auto"
                                         src={image}

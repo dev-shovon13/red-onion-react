@@ -56,6 +56,8 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed
+
+        // eslint-disable-next-line
     }, [])
 
     // user logout 

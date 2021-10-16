@@ -136,7 +136,7 @@ const foods = [
 		},
 		{
 			id: 4,
-			name: 'Beef steak',
+			name: 'chicken steak',
 			title: 'How we dream about our future',
 			info: 'Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant or animal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals.',
 			price: 15.99,
@@ -174,7 +174,7 @@ const foods = [
 		},
 		{
 			id: 2,
-			name: 'pork tenderloin with quinoa pilaf',
+			name: 'lamb tenderloin with quinoa pilaf',
 			title: 'How we dream about our future',
 			info: 'Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant or animal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals.',
 			price: 61.99,
