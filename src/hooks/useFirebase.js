@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-// import initializeAuthentication from '../Firebase/firebase.initialization';
 import initializeAuthentication from '../Firebase/firebase.initialization';
 
 // importing from firebase 
@@ -18,6 +17,7 @@ const useFirebase = () => {
 
     // firebase auth 
     const auth = getAuth();
+
 
     // login user providers 
     const googleProvider = new GoogleAuthProvider();
@@ -81,11 +81,12 @@ const useFirebase = () => {
 
     const handleName = (e) => {
         setName(e.target.value);
-        console.log(e.target.value);
+        console.log("name:", e.target.value);
+
     }
 
     const setUserName = () => {
-        console.log(name);
+        console.log("update name:", name);
         updateProfile(auth.currentUser, {
             displayName: name
         }).then(() => {
@@ -94,10 +95,12 @@ const useFirebase = () => {
 
     const handleEmail = (e) => {
         setEmail(e.target.value);
+        console.log("email:", e.target.value);
     }
 
     const handlePassword = (e) => {
         setPassword(e.target.value);
+        console.log("pass:", e.target.value);
     }
 
     const handleUserSignUp = () => {
@@ -114,6 +117,7 @@ const useFirebase = () => {
 
     // exporting states and functions
     return {
+        name,
         user,
         setUser,
         password,

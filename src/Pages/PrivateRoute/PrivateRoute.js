@@ -7,13 +7,15 @@ import useAuth from '../../hooks/useAuth';
 const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth()
     if (isLoading) {
-        return <Spinner animation="border" variant="info" />
+        return <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+            <Spinner animation="border" variant="info" />
+        </div>
     }
     return (
         <Route
             {...rest}
             render={({ location }) =>
-                user.displayName ? (
+                user.displayName || user.email ? (
                     children
                 ) : (
                     <Redirect

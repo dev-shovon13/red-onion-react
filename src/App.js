@@ -16,6 +16,7 @@ import SignUp from './Pages/SignUp/SignUp';
 import WhyUs from './Pages/WhyUs/WhyUs';
 import Food from './Pages/Food/Food';
 import FoodInfo from './Pages/Food/FoodInfo/FoodInfo';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -48,14 +49,11 @@ function App() {
             <Food />
             <Footer />
           </Route>
-          <Route path="/:id/:slug">
+          <PrivateRoute path="/:id/:slug">
             <Header />
             <FoodInfo />
             <Footer />
-          </Route>
-
-          {/* <PrivateRoute exact path="/review">
-          </PrivateRoute> */}
+          </PrivateRoute>
           <Route path="*">
             <NotFound />
           </Route>

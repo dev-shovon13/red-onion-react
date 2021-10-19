@@ -61,6 +61,9 @@ const LogIn = () => {
     const handleSignIn = () => {
         handleUserSignIn()
             .then(result => {
+                console.log('user', result.user);
+                console.log('userName', result.user.displayName);
+                console.log('userEmail', result.user.email);
                 setUser(result.user)
                 setUserName(result.user.displayName)
                 history.push(redirect_URI)

@@ -60,14 +60,15 @@ const SignUp = () => {
     const handleSignUp = () => {
         handleUserSignUp()
             .then(result => {
-                console.log('user', result.user);
-                console.log('userName', result.user.displayName);
-                console.log('userEmail', result.user.email);
+                console.log('user:', result.user);
+                console.log('userName:', result.user.displayName);
+                console.log('userEmail:', result.user.email);
                 setUser(result.user)
                 setUserName(result.user.displayName)
                 history.push(redirect_URI)
                 setError('')
             }).catch((error) => {
+                console.log(error);
                 setError(error.message)
             }).finally(() => setIsLoading(false));
     }
@@ -106,14 +107,14 @@ const SignUp = () => {
                                 required
                             />
                         </div>
-                        <div className="mb-3">
+                        {/* <div className="mb-3">
                             <input
                                 type="password"
                                 className="form-input"
                                 placeholder="Confirm Password"
                                 required
                             />
-                        </div>
+                        </div> */}
                         <button
                             onClick={handleSignUp}
                             className="btn sign-btn w-100"
