@@ -2,6 +2,7 @@ import { faArrowRight, faBell, faBusAlt, faTruck } from '@fortawesome/free-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import why1 from '../../images/WhyUs/1.jpg'
 import why2 from '../../images/WhyUs/2.jpg'
 import why3 from '../../images/WhyUs/3.jpg'
@@ -43,6 +44,10 @@ const WhyUs = () => {
 
     return (
         <div className="bg">
+            <Helmet>
+                <title>About Us</title>
+                <meta name="This is the About page of Red Onion" content="Red Onion Website" />
+            </Helmet>
             <Container className="py-5">
                 <div className="w-50 why-title">
                     <h1>why you choose us</h1>

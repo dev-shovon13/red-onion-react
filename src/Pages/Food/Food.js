@@ -2,6 +2,7 @@ import React from 'react';
 import Menu from './Menu/Menu';
 import foods from '../../fakeData/data';
 import './Food.css'
+import { Helmet } from 'react-helmet';
 
 const Food = () => {
     const breakfast = foods[0].items
@@ -12,6 +13,10 @@ const Food = () => {
     const dinnerSlug = foods[2].slug;
     return (
         <div className="py-5">
+            <Helmet>
+                <title>Menu</title>
+                <meta name="This is the Menu page of Red Onion" content="Red Onion Website" />
+            </Helmet>
             <div className="container">
                 <ul className="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
                     <li className="nav-item" role="presentation">

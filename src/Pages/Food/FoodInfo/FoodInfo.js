@@ -5,6 +5,7 @@ import { faDollarSign, faMinus, faPlus, faShoppingCart } from '@fortawesome/free
 import data from '../../../fakeData/data'
 import { Carousel } from 'react-bootstrap';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 
 const FoodInfo = () => {
@@ -21,6 +22,10 @@ const FoodInfo = () => {
     let images = foods.items.map(obj => obj.img);
     return (
         <div className="container py-5">
+            <Helmet>
+                <title>{name.toUpperCase()}</title>
+                <meta name="This is a Restaurant Website" content="Red Onion Website" />
+            </Helmet>
             <div className="row row-cols-1 row-cols-md-2 ms-auto">
                 <div className="col">
                     <h1 className="w-75 item-info-title text-capitalize">{name}</h1>

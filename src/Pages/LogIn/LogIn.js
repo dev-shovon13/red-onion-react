@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import google from '../../images/google.png'
 import logo from '../../images/logo.png'
 import './LogIn.css'
+import { Helmet } from 'react-helmet';
 
 const LogIn = () => {
     // imports 
@@ -74,6 +75,10 @@ const LogIn = () => {
     }
     return (
         <div className="log-in-bg pt-5 pb-5 text-center">
+            <Helmet>
+                <title>Login</title>
+                <meta name="This is the login page of Red Onion" content="Red Onion Website" />
+            </Helmet>
             <div className="container">
                 <div className="width mx-auto">
                     <Link to="/home">

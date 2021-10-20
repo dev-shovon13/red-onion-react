@@ -1,6 +1,7 @@
 import { faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { NavLink, useLocation, useHistory, Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import google from '../../images/google.png'
@@ -74,6 +75,10 @@ const SignUp = () => {
     }
     return (
         <div className="sign-up-bg text-center">
+            <Helmet>
+                <title>Sign Up</title>
+                <meta name="This is the sign up page of Red Onion" content="Red Onion Website" />
+            </Helmet>
             <div className="container pt-3">
                 <div className="width mx-auto">
                     <form onSubmit={handleSubmit}>
